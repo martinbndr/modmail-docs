@@ -12,6 +12,7 @@
     * [Alma Linux](installation/local-hosting-vps/almalinux.md)
     * [Logviewer](installation/local-hosting-vps/logviewer.md)
     * [Patreon logviewer](installation/local-hosting-vps/patreon\_logviewer.md)
+  * [Pterodactyl](installation/pterodactyl.md)
   * [Railway](installation/railway.md)
   * [Heroku](installation/heroku.md)
   * [Community Guides](installation/community-guides.md)
