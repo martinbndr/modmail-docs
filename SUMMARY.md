@@ -34,6 +34,5 @@
   * [Installation](installation-1.md)
   * [Installation (continued)](installation-continued.md)
   * [Configure Modmail and Logviewer](configure-modmail-and-logviewer.md)
-  * [Frequently Asked Questions](<frequently-asked-questions (1).md>)
   * [Modmail Usage](modmail-usage.md)
   * [Updating](<updating (1).md>)
