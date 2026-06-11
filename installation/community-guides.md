@@ -22,9 +22,8 @@ Oracle Cloud Compute is an Infrastructure as a Service (IaaS) platform. Unlike R
 
 ## [Pterodactyl](https://martinbndr.gitbook.io/modmail-hosting-on-pterodactyl/) Guide by martinbndr
 
-Pterodactyl is a hosting self hostable platform that originally allows to host gameservers but it can also host other applications like modmail.
-Some hosting provider providing you a free plan in order to application via this panel.
+Pterodactyl is a hosting self hostable platform that originally allows to host gameservers but it can also host other applications like modmail. Some hosting provider providing you a free plan in order to application via this panel.
 
 {% hint style="warning" %}
-Pterodactyl Panel based hosts are on the Modmail Team's use-caution hosting providers list. For more information, please view [the additional considerations page](../choose-host/choose-host1.md) in our [choosing a host guide](../choose-host/README.md).
+Pterodactyl Panel based hosts are on the Modmail Team's use-caution hosting providers list. For more information, please view [the additional considerations page](https://github.com/martinbndr/modmail-docs/blob/docker/choose-host/choose-host1.md) in our [choosing a host guide](../choose-host/).
 {% endhint %}

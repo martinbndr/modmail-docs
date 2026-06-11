@@ -2,7 +2,7 @@
 description: Hosting on the cloud or on your own computer.
 ---
 
-# Local hosting / VPS
+# Local Hosting / VPS
 
 ## General Requirements
 
@@ -23,11 +23,10 @@ More OS-specific requirements will be listed on their specific installation page
 * [Alma Linux](almalinux.md)
 * [CentOS](almalinux.md)
 * [Raspberry Pi OS](debian.md)
-    * See the **Raspberry Pi OS Steps** section to ensure a proper installation.
 
 ## Logviewer
 
 You can also self-host logviewer by following the guides below.
 
 * [Logviewer](logviewer.md)
-* [Patreon Logviewer](patreon\_logviewer.md)
+* [Patreon Logviewer](patreon_logviewer.md)

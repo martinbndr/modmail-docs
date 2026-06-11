@@ -14,47 +14,45 @@ The Thread Menu `?threadmenu` function allows recipients to choose an option to 
 
 ## Config Options
 
-|  Config Variable Name  | Type |  Default  | Details | 
-| - | - | - | - |
-| thread_creation_menu_anonymous_menu | Boolean (`yes/no`)  | No | If enabled, the initial menu prompt relayed to staff (after creation) is anonymized; only selection details are logged, not the original prompt message author context. |
-| thread_creation_menu_close_on_timeout | Boolean (`yes/no`) | No | Silently aborts thread creation if the user does not select an option before the timeout expires. |
-| thread_creation_menu_dropdown_placeholder | Text | "Select an option to contact the staff team."  | Placeholder text displayed in the dropdown before selection. |
-| thread_creation_menu_embed_color | Hex Code (or Discord Color) | Green | Color for the menu embed's side strip. Accepts hex (e.g. #5865F2) or one of the supported color names (e.g. "blurple"). |
-| thread_creation_menu_embed_footer | Text | Empty (no footer) | Optional footer text at the bottom of the menu embed. |
-| thread_creation_menu_embed_footer_icon_url | URL | Empty (no icon) | Optional URL for the small footer icon displayed next to the footer text. |
-| thread_creation_menu_embed_image_url | URL | Empty (no image)  | Optional large hero image displayed in the body of the menu embed. If set, this image is shown prominently and takes precedence over the thumbnail. |
-| thread_creation_menu_embed_large_image | Boolean (`yes/no`) | No | Promotes the thumbnail to a large hero image when no `thread_creation_menu_embed_image_url` is set. Useful if you want a big image without specifying a separate URL. |
-| thread_creation_menu_embed_text | Text | "Please select an option." | Text shown in the embed above the selection dropdown in the user's DM. |
-| thread_creation_menu_embed_thumbnail_url | URL | Empty (no thumbnail) | Optional thumbnail image shown in the top-right of the menu embed. |
-| thread_creation_menu_embed_title | Text | Empty (no title) | Optional title at the top of the thread-creation menu embed in the user's DM. |
-| thread_creation_menu_precreate_channel | Boolean (`yes/no`) | No | When enabled, a thread channel is created immediately upon the user's first DM even if the thread creation menu is enabled. The menu is still shown but selection becomes optional and happens after channel creation. |
-| thread_creation_menu_selection_log | Boolean (`yes/no`) | Yes | When disabled, the staff will not see an automatic message with the selection details though commands may still act. |
-| thread_creation_menu_timeout | Time in Seconds | 30 | If the timeout is reached, `thread_creation_menu_close_on_timeout` controls whether the attempt is aborted or the user is asked to message again.|
-
+| Config Variable Name                             | Type                        | Default                                       | Details                                                                                                                                                                                                                |
+| ------------------------------------------------ | --------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| thread\_creation\_menu\_anonymous\_menu          | Boolean (`yes/no`)          | No                                            | If enabled, the initial menu prompt relayed to staff (after creation) is anonymized; only selection details are logged, not the original prompt message author context.                                                |
+| thread\_creation\_menu\_close\_on\_timeout       | Boolean (`yes/no`)          | No                                            | Silently aborts thread creation if the user does not select an option before the timeout expires.                                                                                                                      |
+| thread\_creation\_menu\_dropdown\_placeholder    | Text                        | "Select an option to contact the staff team." | Placeholder text displayed in the dropdown before selection.                                                                                                                                                           |
+| thread\_creation\_menu\_embed\_color             | Hex Code (or Discord Color) | Green                                         | Color for the menu embed's side strip. Accepts hex (e.g. #5865F2) or one of the supported color names (e.g. "blurple").                                                                                                |
+| thread\_creation\_menu\_embed\_footer            | Text                        | Empty (no footer)                             | Optional footer text at the bottom of the menu embed.                                                                                                                                                                  |
+| thread\_creation\_menu\_embed\_footer\_icon\_url | URL                         | Empty (no icon)                               | Optional URL for the small footer icon displayed next to the footer text.                                                                                                                                              |
+| thread\_creation\_menu\_embed\_image\_url        | URL                         | Empty (no image)                              | Optional large hero image displayed in the body of the menu embed. If set, this image is shown prominently and takes precedence over the thumbnail.                                                                    |
+| thread\_creation\_menu\_embed\_large\_image      | Boolean (`yes/no`)          | No                                            | Promotes the thumbnail to a large hero image when no `thread_creation_menu_embed_image_url` is set. Useful if you want a big image without specifying a separate URL.                                                  |
+| thread\_creation\_menu\_embed\_text              | Text                        | "Please select an option."                    | Text shown in the embed above the selection dropdown in the user's DM.                                                                                                                                                 |
+| thread\_creation\_menu\_embed\_thumbnail\_url    | URL                         | Empty (no thumbnail)                          | Optional thumbnail image shown in the top-right of the menu embed.                                                                                                                                                     |
+| thread\_creation\_menu\_embed\_title             | Text                        | Empty (no title)                              | Optional title at the top of the thread-creation menu embed in the user's DM.                                                                                                                                          |
+| thread\_creation\_menu\_precreate\_channel       | Boolean (`yes/no`)          | No                                            | When enabled, a thread channel is created immediately upon the user's first DM even if the thread creation menu is enabled. The menu is still shown but selection becomes optional and happens after channel creation. |
+| thread\_creation\_menu\_selection\_log           | Boolean (`yes/no`)          | Yes                                           | When disabled, the staff will not see an automatic message with the selection details though commands may still act.                                                                                                   |
+| thread\_creation\_menu\_timeout                  | Time in Seconds             | 30                                            | If the timeout is reached, `thread_creation_menu_close_on_timeout` controls whether the attempt is aborted or the user is asked to message again.                                                                      |
 
 ## Commands
 
-- threadmenu
-  - dump_config - Dump the current core thread menu config to a file.
-  - load_config - Load the thread menu config from an attached file.
-  - option - Manage main-menu options (add/remove/edit/show).
-      - add - Interactive wizard to add a main-menu option.
-      - edit - Interactive wizard to edit a main-menu option.
-      - remove - Remove a main-menu option by label.
-      - show - Show detailed information about a main-menu option.
-  - reset - Reset ALL thread-creation menu settings to their defaults.
-  - show - Show all current main-menu options.
-  - submenu - Manage submenus (create/delete/list/show and options within).
-      - create - Create an empty submenu that can hold nested options.
-      - delete - Delete a submenu and all its options.
-      - list - List all submenu keys currently configured.
-      - option - Manage options within a specific submenu (add/remove/edit).
-          - add - Interactive wizard to add an option inside a submenu.
-          - edit - Interactive wizard to edit a submenu option.
-          - remove - Remove an option from a submenu via an interactive prompt.
-          - show - Show the options configured inside a submenu.
-  - toggle - Enable or disable the thread-creation menu.
-
+* threadmenu
+  * dump\_config - Dump the current core thread menu config to a file.
+  * load\_config - Load the thread menu config from an attached file.
+  * option - Manage main-menu options (add/remove/edit/show).
+    * add - Interactive wizard to add a main-menu option.
+    * edit - Interactive wizard to edit a main-menu option.
+    * remove - Remove a main-menu option by label.
+    * show - Show detailed information about a main-menu option.
+  * reset - Reset ALL thread-creation menu settings to their defaults.
+  * show - Show all current main-menu options.
+  * submenu - Manage submenus (create/delete/list/show and options within).
+    * create - Create an empty submenu that can hold nested options.
+    * delete - Delete a submenu and all its options.
+    * list - List all submenu keys currently configured.
+    * option - Manage options within a specific submenu (add/remove/edit).
+      * add - Interactive wizard to add an option inside a submenu.
+      * edit - Interactive wizard to edit a submenu option.
+      * remove - Remove an option from a submenu via an interactive prompt.
+      * show - Show the options configured inside a submenu.
+  * toggle - Enable or disable the thread-creation menu.
 
 ## Example Flowchart and Command Order
 
@@ -63,13 +61,17 @@ This feature allows the creation of very complex menu systems. If you are intend
 {% endhint %}
 
 {% tabs %}
+{% tab title="Flowchart Example" %}
 
-{% tab title="Flowchart Example" %} <figure><img src=".gitbook/assets/example_threadmenu_diagram" alt=""><figcaption></figcaption></figure> {% endtab %}
+{% endtab %}
 
-{% tab title="Commands Example" %} **In Progress by theonlystephen** {% endtab %}
+{% tab title="Commands Example" %}
+\*\*In Progress by theonlystephen\*\*
+{% endtab %}
 
-{% tab title="Flowchart Template" %} **In Progress by theonlystephen** {% endtab %}
-
+{% tab title="Flowchart Template" %}
+\*\*In Progress by theonlystephen\*\*
+{% endtab %}
 {% endtabs %}
 
 ## Advanced/Legacy Usage
@@ -78,7 +80,7 @@ This feature allows the creation of very complex menu systems. If you are intend
 
 <summary>Migrating from Legacy advanced-menu Plugin</summary>
 
-Migration from the legacy plugin, to core function requires permission to modify the menu. In both, by default, this level is ADMINISTRATOR [4].
+Migration from the legacy plugin, to core function requires permission to modify the menu. In both, by default, this level is ADMINISTRATOR \[4].
 
 **Step 1: Export Config from `advanced-menu`**
 
@@ -94,25 +96,18 @@ Press the download button and keep track of where the file was saved. You will n
 
 Run the `?threadmenu load_config` command, while attaching the downloaded `config.json` to your message.
 
-<div>
+<div><figure><img src="../.gitbook/assets/transfer-threadmenu-2.png" alt="Attach the config.json file directly to your message."><figcaption><p>Attach the config.json file directly to your message.</p></figcaption></figure> <figure><img src="../.gitbook/assets/transfer-threadmenu-3.png" alt="The bot will provide you a success confirmation message after successful import."><figcaption><p>The import was successful if you see: <strong>Successfully loaded config into core.</strong></p></figcaption></figure></div>
 
-<figure><img src="../.gitbook/assets/transfer-threadmenu-2.png" alt="Attach the config.json file directly to your message."><figcaption><p>Attach the config.json file directly to your message.</p></figcaption></figure>
+\##Step 4: Uninstall advancedmenu Plugin
 
- 
-
-<figure><img src="../.gitbook/assets/transfer-threadmenu-3.png" alt="The bot will provide you a success confirmation message after successful import."><figcaption><p>The import was successful if you see: <strong>Successfully loaded config into core.</strong></p></figcaption></figure>
-
-</div>
-
-##Step 4: Uninstall advancedmenu Plugin
-
-Run the command: ``?plugin remove advancedmenu``.
+Run the command: `?plugin remove advancedmenu`.
 
 **You're done!**
 
 Good job! You have successfully migrated your `advanced-menu` config to the Thread Menu feature introduced in Modmail 4.2.0.
 
 </details>
+
 <details>
 
 <summary>Menu .json File Structure</summary>
@@ -128,8 +123,8 @@ By default, the file is now called `thread_creation_menu_config.json`. You can r
 Note: the `"category_id":` in each menu option is optional, and not required for successful import.
 
 See an example dumped config below:
-{% code title="thread_creation_menu_config.json" %}
 
+{% code title="thread_creation_menu_config.json" %}
 ```json
 {
   "enabled": true,
