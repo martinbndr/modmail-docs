@@ -4,35 +4,36 @@ description: Deploy Modmail on Railway PaaS.
 
 # Railway
 
-## What is Railway?
+## Railway
+
+### What is Railway?
 
 Railway is a deployment platform where you can provision infrastructure, develop with that infrastructure locally, and then deploy to the cloud.
 
-## Requirements
+### Requirements
 
 * A credit card.
 * An email account.
 * A [GitHub](https://github.com/signup) account.
 * You have completed the initial steps: [invited your bot](./#create-a-discord-bot) and [created a MongoDB database](./#create-a-mongodb-database).
 
-## Costs
+### Costs
 
-Their lowest plan starts at $5 per month.
-Visit the [pricing](https://railway.com/pricing) page for the up-to-date pricing info.
+Their lowest plan starts at $5 per month. Visit the [pricing](https://railway.com/pricing) page for the up-to-date pricing info.
 
-# Deploy on Railway using Railway Templates
+## Deploy on Railway using Railway Templates
 
-### Modmail Bot:
+#### Modmail Bot:
 
 [![Deploy Modmail Bot](https://railway.com/button.svg)](https://railway.com/deploy/modmail)
 
-### Modmail Logviewer:
+#### Modmail Logviewer:
 
 [![Deploy Modmail Logviewer](https://railway.com/button.svg)](https://railway.com/deploy/modmail-logviewer)
 
 Deploying via these templates makes it easier because you do not need to fork (copy) our github repository and creating the project is made a bit smoother. However if you do face issues or anything else, you may use the alternative way to deploy below. The User account creation instructions can be followed from below
 
-## Fork our GitHub repositories
+### Fork our GitHub repositories
 
 You will need to fork our repositories to deploy onto Railway.
 
@@ -48,19 +49,11 @@ Next do the same for the Logviewer repository by heading over to [https://github
 
 Next, to keep your Modmail and Logviewer up to date, you will need to install the [Pull app](https://github.com/apps/pull). Simply head over to [https://github.com/apps/pull](https://github.com/apps/pull), click **Install**, choose **Only select repositories**, then select **both** the Modmail and Logviewer repositories that you forked in the previous step.
 
-<div>
-
-<figure><img src="../.gitbook/assets/RW3.png" alt="Screenshot of installing the pull app."><figcaption><p>Click <strong>Install</strong> to install the <a href="https://github.com/apps/pull">Pull app</a>.</p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/RW4.png" alt="Screenshot of selecting both repositories."><figcaption><p>Select <strong>both</strong> the Modmail and Logviewer forks, then click <strong>Install</strong>.</p></figcaption></figure>
-
-</div>
+<div><figure><img src="../.gitbook/assets/RW3.png" alt="Screenshot of installing the pull app."><figcaption><p>Click <strong>Install</strong> to install the <a href="https://github.com/apps/pull">Pull app</a>.</p></figcaption></figure> <figure><img src="../.gitbook/assets/RW4.png" alt="Screenshot of selecting both repositories."><figcaption><p>Select <strong>both</strong> the Modmail and Logviewer forks, then click <strong>Install</strong>.</p></figcaption></figure></div>
 
 Your GitHub should now be all set. Next step, [create a Railway account](railway.md#create-a-railway-account) to deploy your bot.
 
-## Create a Railway account
+### Create a Railway account
 
 Head over to [Railway's website](https://railway.app/new) and create an account. It will ask you to create a new project, choose **Deploy from GitHub repo**. Then, you will be asked to connect your GitHub account.
 
@@ -78,101 +71,46 @@ If your GitHub account is new or not reputable, you may be asked to verify your 
 
 This unfortunately means that you will have to provide a credit card for verification. Click **Verify Account**, read and accept Railway's **Terms of Service**, then enter your credit card details. You may be temporary charged $1 USD to confirm the legitimacy of the card.
 
-<img src="../.gitbook/assets/RW6.png" alt="Screenshot of clicking verify account." data-size="original"><img src="../.gitbook/assets/RW7.png" alt="Screenshot of clicking terms of service." data-size="original"><img src="../.gitbook/assets/RW7B.png" alt="Screenshot of clicking I agree with terms of service." data-size="original"><img src="../.gitbook/assets/RW8.png" alt="Screenshot of entering your credit card details." data-size="original">
+![Screenshot of clicking verify account.](../.gitbook/assets/RW6.png) ![Screenshot of clicking terms of service.](../.gitbook/assets/RW7.png) ![Screenshot of clicking I agree with terms of service.](../.gitbook/assets/RW7B.png) ![Screenshot of entering your credit card details.](../.gitbook/assets/RW8.png)
 
 </details>
 
 Next, you will be asked to **Configure a GitHub App**. You will be directed to the GitHub authentication page. Choose **Only select repositories**, then select **both** the Modmail and Logviewer repositories, as you have done before. Finally, click **Install & Authorize**.
 
-<div>
-
-<figure><img src="../.gitbook/assets/RW9.png" alt="Screenshot of choosing configure GitHub app."><figcaption><p>Click <strong>Configure a GitHub App</strong>.</p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/RW10.png" alt="Screenshot of selecting both repositories."><figcaption><p>Select <strong>both</strong> the Modmail and Logviewer forks, then click <strong>Install &#x26; Authorize</strong>.</p></figcaption></figure>
-
-</div>
+<div><figure><img src="../.gitbook/assets/RW9.png" alt="Screenshot of choosing configure GitHub app."><figcaption><p>Click <strong>Configure a GitHub App</strong>.</p></figcaption></figure> <figure><img src="../.gitbook/assets/RW10.png" alt="Screenshot of selecting both repositories."><figcaption><p>Select <strong>both</strong> the Modmail and Logviewer forks, then click <strong>Install &#x26; Authorize</strong>.</p></figcaption></figure></div>
 
 The next step is to deploy Modmail onto Railway. This is split into two parts. You will need to complete **both parts** to fully Modmail.
 
-## Part 1: Deploying the Logviewer
+### Part 1: Deploying the Logviewer
 
 From the [**New Project**](https://railway.app/new) page, create the project by selecting your **Logviewer** repository, then select **Add variables**.
 
-<div>
-
-<figure><img src="../.gitbook/assets/RW11B.png" alt="Screenshot of selecting the Logviewer repository."><figcaption><p>Choose your <strong>Logviewer</strong> repository fork.</p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/RW12B.png" alt="Screenshot of choosing Add Variables."><figcaption><p>Click on <strong>Add variables</strong>. Alternatively, the following page can also be found within the project -> variables menu.</p></figcaption></figure>
-
-</div>
+<div><figure><img src="../.gitbook/assets/RW11B.png" alt="Screenshot of selecting the Logviewer repository."><figcaption><p>Choose your <strong>Logviewer</strong> repository fork.</p></figcaption></figure> <figure><img src="../.gitbook/assets/RW12B.png" alt="Screenshot of choosing Add Variables."><figcaption><p>Click on <strong>Add variables</strong>. Alternatively, the following page can also be found within the project -> variables menu.</p></figcaption></figure></div>
 
 Click **New Variable**, set left to be **`CONNECTION_URI`**, then on the right, paste your revised MongoDB connection string from your Notepad (if this is new to you, [go back and read the initial steps](./)).
 
 Don't add any other variables, nor use the suggested variables section. You should see a new variable named **`CONNECTION_URI`** added under variables once you're done.
 
-<div>
-
-<figure><img src="../.gitbook/assets/RW13 (1).png" alt="Screenshot of clicking new variable."><figcaption><p>Click on <strong>New Variable</strong>.</p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/RW14 (1).png" alt="Screenshot of filling left and right boxes then click add."><figcaption><p>Left side: <strong><code>CONNECTION_URI</code></strong>. Right side: your <strong>MongoDB connection string</strong>. Then click <strong>+ Add</strong>.</p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/RW15.png" alt="Screenshot of the completed variables page."><figcaption><p>Once you've added the variable, you should see a single variable named <strong><code>CONNECTION_URI</code></strong>.</p></figcaption></figure>
-
-</div>
+<div><figure><img src="../.gitbook/assets/RW13 (1).png" alt="Screenshot of clicking new variable."><figcaption><p>Click on <strong>New Variable</strong>.</p></figcaption></figure> <figure><img src="../.gitbook/assets/RW14 (1).png" alt="Screenshot of filling left and right boxes then click add."><figcaption><p>Left side: <strong><code>CONNECTION_URI</code></strong>. Right side: your <strong>MongoDB connection string</strong>. Then click <strong>+ Add</strong>.</p></figcaption></figure> <figure><img src="../.gitbook/assets/RW15.png" alt="Screenshot of the completed variables page."><figcaption><p>Once you've added the variable, you should see a single variable named <strong><code>CONNECTION_URI</code></strong>.</p></figcaption></figure></div>
 
 Next, go to the **Deployments** tab, look at the latest deployment, is it successful? You may need to wait up to 10 minutes. If you click the URL, you should be taken to your Logviewer homepage (see screenshot below). **Save this URL** into your Notepad as we will need it for the next step, we will be referring to this as your Logviewer URL.
 
-<div>
+<div><figure><img src="../.gitbook/assets/RW16.png" alt="Screenshot of the deployments tab, and clicking the URL."><figcaption><p>Navigate to the <strong>Deployments</strong> tab, save and open this URL.</p></figcaption></figure> <figure><img src="../.gitbook/assets/LVHOME.png" alt="Screenshot of the Logviewer homepage."><figcaption><p>This URL should show the Logviewer homepage.</p></figcaption></figure></div>
 
-<figure><img src="../.gitbook/assets/RW16.png" alt="Screenshot of the deployments tab, and clicking the URL."><figcaption><p>Navigate to the <strong>Deployments</strong> tab, save and open this URL.</p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/LVHOME.png" alt="Screenshot of the Logviewer homepage."><figcaption><p>This URL should show the Logviewer homepage.</p></figcaption></figure>
-
-</div>
-
-## Part 2: Deploying the Modmail bot
+### Part 2: Deploying the Modmail bot
 
 From the [**New Project**](https://railway.app/new) page, create the project by selecting your **Modmail** repository, then select **Add variables**.
 
-<div>
-
-<figure><img src="../.gitbook/assets/RW11.png" alt="Screenshot of selecting the Modmail repository."><figcaption><p>Choose your <strong>Modmail</strong> repository fork.</p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/RW12.png" alt="Screenshot of choosing Add Variables."><figcaption><p>Click on <strong>Add variables</strong>. Alternatively, the following page can also be found within the project -> variables menu.</p></figcaption></figure>
-
-</div>
+<div><figure><img src="../.gitbook/assets/RW11.png" alt="Screenshot of selecting the Modmail repository."><figcaption><p>Choose your <strong>Modmail</strong> repository fork.</p></figcaption></figure> <figure><img src="../.gitbook/assets/RW12.png" alt="Screenshot of choosing Add Variables."><figcaption><p>Click on <strong>Add variables</strong>. Alternatively, the following page can also be found within the project -> variables menu.</p></figcaption></figure></div>
 
 Click **New Variable.** We will be adding 5 variables in total, so repeat this step until you've added all 5 variables.
 
-| Variable Name (left) | Variable Value (right)                                                        | Example                                                                                                               |
-| -------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| **`CONNECTION_URI`** | The MongoDB Connection string from your Notepad.                              | <pre data-overflow="wrap"><code>mongodb+srv://modmail:elAO7wF1r07pNG6u@cluster0.example.mongodb.net
-</code></pre>     |
-|                      |                                                                               |                                                                                                                       |
-| **`TOKEN`**          | The Discord bot token from your Notepad.                                      | <pre data-overflow="wrap"><code>MTA3Djv3IAxNjk1NDgdKD231.G1AoUjD.5z629aKP34JKHn4v1EsdNUwdDO3MvBR9ifVES4
-</code></pre> |
-|                      |                                                                               |                                                                                                                       |
-| **`LOG_URL`**        | The Logviewer URL from your Notepad. Remember to add `https://` in front!     | <pre data-overflow="wrap"><code><strong>https://web-production-1234.up.railway.app
-</strong></code></pre>             |
-|                      |                                                                               |                                                                                                                       |
-| **`OWNERS`**         | Your Discord ID. If you have multiple owners, separate your IDs with a comma. | <pre><code>718827787302791100
-</code></pre>                                                                           |
-|                      |                                                                               |                                                                                                                       |
-| **`GUILD_ID`**       | The ID of the Discord server for your Modmail bot.                            | <pre><code>109483701365508619
-</code></pre>                                                                           |
-|                      |                                                                               |                                                                                                                       |
+<table><thead><tr><th>Variable Name (left)</th><th>Variable Value (right)</th><th>Example</th></tr></thead><tbody><tr><td><strong><code>CONNECTION_URI</code></strong></td><td>The MongoDB Connection string from your Notepad.</td><td><pre data-overflow="wrap"><code>mongodb+srv://modmail:elAO7wF1r07pNG6u@cluster0.example.mongodb.net
+</code></pre></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td><strong><code>TOKEN</code></strong></td><td>The Discord bot token from your Notepad.</td><td><pre data-overflow="wrap"><code>MTA3Djv3IAxNjk1NDgdKD231.G1AoUjD.5z629aKP34JKHn4v1EsdNUwdDO3MvBR9ifVES4
+</code></pre></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td><strong><code>LOG_URL</code></strong></td><td>The Logviewer URL from your Notepad. Remember to add <code>https://</code> in front!</td><td><pre data-overflow="wrap"><code><strong>https://web-production-1234.up.railway.app
+</strong></code></pre></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td><strong><code>OWNERS</code></strong></td><td>Your Discord ID. If you have multiple owners, separate your IDs with a comma.</td><td><pre><code>718827787302791100
+</code></pre></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td><strong><code>GUILD_ID</code></strong></td><td>The ID of the Discord server for your Modmail bot.</td><td><pre><code>109483701365508619
+</code></pre></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
 
 <details>
 
@@ -188,17 +126,9 @@ If you haven't yet invited your Modmail bot to your staff server, see the [invit
 
 </details>
 
-<div>
+<div><figure><img src="../.gitbook/assets/RW17.png" alt="Screenshot of clicking new variable."><figcaption><p>Click on <strong>New Variable</strong>.</p></figcaption></figure> <figure><img src="../.gitbook/assets/RW18.png" alt="Screenshot of the completed variables page."><figcaption><p>Once you've added the variable as per the table above, you should see 5 variables here.</p></figcaption></figure></div>
 
-<figure><img src="../.gitbook/assets/RW17.png" alt="Screenshot of clicking new variable."><figcaption><p>Click on <strong>New Variable</strong>.</p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/RW18.png" alt="Screenshot of the completed variables page."><figcaption><p>Once you've added the variable as per the table above, you should see 5 variables here.</p></figcaption></figure>
-
-</div>
-
-## Complete the setup
+### Complete the setup
 
 Within 10 minutes of saving the Modmail bot variables, your Modmail bot should come online in your server. The default prefix for Modmail is **`?`**. You need to run **`?setup`** within your server to complete the setup. If you configured Modmail to use a separate staff server, you must run this command **in your staff server**. This will create a category for your Modmail threads and a Logs channel for an archive of all past threads.
 
@@ -210,11 +140,11 @@ This probably means you've failed to follow one or more steps. \[more info TODO]
 
 </details>
 
-## How to keep your bot running 24/7
+### How to keep your bot running 24/7
 
 You have 10 days to test Modmail without upgrading to the "Developer" plan. As mentioned in the [costs](railway.md#costs) section, Railway's Developer plan provides enough free monthly credits to run Modmail for **free** 24/7 everyday. However, you will need to provide your credit card details to upgrade your plan. More details can be found [here](https://docs.railway.app/reference/plans).
 
-#### Usage-based subscription
+**Usage-based subscription**
 
 Head over to the \*\*\*\* [**Billing Details**](https://railway.app/account/billing) page, click the **Unlock** button to unlock Developer plan. Then input your credit card details and hit **Subscribe to Developer Plan**.
 
@@ -224,15 +154,7 @@ Subscribing to the Developer plan under _usage based subscription_ **may incur y
 If you want to guarantee that your credit card won't get charged for whatever reason, check out the [credit-based subscription model](railway.md#credit-based-subscription-alternative-subscription-model) instead. Alternatively, you can use a virtual credit card, such as [privacy.com](https://privacy.com/virtual-card), to verify for the Developer plan.
 {% endhint %}
 
-<div>
-
-<figure><img src="../.gitbook/assets/RW20.png" alt="Screenshot of clicking the unlock button."><figcaption><p>Click the <strong>Unlock</strong> button next to <strong>Unlock Developer Plan</strong>.</p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/RW21.png" alt="Screenshot of filling in credit card details and clicking subscribe."><figcaption><p>Fill in your credit card details then click <strong>Subscribe to Developer Plan</strong>.</p></figcaption></figure>
-
-</div>
+<div><figure><img src="../.gitbook/assets/RW20.png" alt="Screenshot of clicking the unlock button."><figcaption><p>Click the <strong>Unlock</strong> button next to <strong>Unlock Developer Plan</strong>.</p></figcaption></figure> <figure><img src="../.gitbook/assets/RW21.png" alt="Screenshot of filling in credit card details and clicking subscribe."><figcaption><p>Fill in your credit card details then click <strong>Subscribe to Developer Plan</strong>.</p></figcaption></figure></div>
 
 <details>
 
@@ -244,23 +166,11 @@ A temporary hold of $1.00 USD will be placed on the card and then refunded immed
 
 </details>
 
-#### Credit-based subscription (alternative subscription model)
+**Credit-based subscription (alternative subscription model)**
 
 If you rather pay a one-time $5.00 USD non-refundable credit purchase instead of permanently linking your credit card, you can choose to use the credit-based subscription model. As long as you have a non-zero credit balance (which should be forever since the monthly operating cost for Modmail is $0.00), you will be continuously subscribed to the Developer plan.
 
-<div>
-
-<figure><img src="../.gitbook/assets/RW20.png" alt="Screenshot of clicking the unlock button."><figcaption><p>Click the <strong>Unlock</strong> button next to <strong>Unlock Developer Plan</strong>.</p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/RW23.png" alt="Screenshot of clicking credit-based subscription."><figcaption><p>Click <strong>Credit-based subscription</strong> at the bottom.</p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/RW24.png" alt="Screenshot of entering credit card info, $5 amount, and click purchase credits."><figcaption><p>Fill in your credit card details, enter <strong>$5.00</strong> as the amount (it's the minimum), then click <strong>Purchase Credits</strong>.</p></figcaption></figure>
-
-</div>
+<div><figure><img src="../.gitbook/assets/RW20.png" alt="Screenshot of clicking the unlock button."><figcaption><p>Click the <strong>Unlock</strong> button next to <strong>Unlock Developer Plan</strong>.</p></figcaption></figure> <figure><img src="../.gitbook/assets/RW23.png" alt="Screenshot of clicking credit-based subscription."><figcaption><p>Click <strong>Credit-based subscription</strong> at the bottom.</p></figcaption></figure> <figure><img src="../.gitbook/assets/RW24.png" alt="Screenshot of entering credit card info, $5 amount, and click purchase credits."><figcaption><p>Fill in your credit card details, enter <strong>$5.00</strong> as the amount (it's the minimum), then click <strong>Purchase Credits</strong>.</p></figcaption></figure></div>
 
 There you go! Your bot should now be able to run 24/7 without interruptions. Head over to the [**Usage**](https://railway.app/account/usage) page to make sure you won't be charged. Add up the estimated price for both your projects and verify that they're well below $5.00 USD.
 
@@ -272,11 +182,11 @@ There you go! Your bot should now be able to run 24/7 without interruptions. Hea
 
 If you're subscribed under the [usage-based subscription](railway.md#usage-based-subscription) model, you can cancel your subscription by heading to the \*\*\*\* [**Billing Details**](https://railway.app/account/billing) page, click **Manage Subscription**, then click **Cancel plan**.
 
-<img src="../.gitbook/assets/RW25.png" alt="Screenshot of clicking manage subscription." data-size="original"><img src="../.gitbook/assets/RW26.png" alt="Screenshot of clicking cancel plan." data-size="original">
+![Screenshot of clicking manage subscription.](../.gitbook/assets/RW25.png) ![Screenshot of clicking cancel plan.](../.gitbook/assets/RW26.png)
 
 </details>
 
-## Updating
+### Updating
 
 Railway is configured to automatically update your Modmail bot and Logviewer whenever new updates become available.
 
@@ -288,8 +198,8 @@ You can disable auto-updates by heading to the settings page for **both** your M
 
 </details>
 
-## Next steps
+### Next steps
 
-Now that you've successfully set up Modmail, visit the [Getting Started](../getting-started.md) page to find information on using Modmail.
+Now that you've successfully set up Modmail, visit the [Getting Started](https://github.com/martinbndr/modmail-docs/blob/main/getting-started.md) page to find information on using Modmail.
 
 You can also join our [**Discord Server**](https://discord.gg/cnUpwrnpYb) to interact with our community or get support for Modmail.

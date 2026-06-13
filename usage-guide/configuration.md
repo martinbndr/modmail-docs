@@ -19,7 +19,7 @@ Things covered in brackets are optional: \`\[]\` Things covered in angled bracke
 **Moderation:**
 
 * [Prefix](configuration.md)
-* [Mention](usage-guide/configuration/#mention-mention)
+* [Mention](https://github.com/martinbndr/modmail-docs/blob/docker/usage-guide/usage-guide/configuration/README.md#mention-mention)
 
 ## Moderation Configurations
 
@@ -31,7 +31,7 @@ Set an amount of time a users account has to be created in order to open a ticke
 
 _**Example:**_
 
-* `?config set account_age P12DT3H` (stands for 12 days and 3 hours in [ISO-8601 Duration Format](https://en.wikipedia.org/wiki/ISO\_8601#Durations))
+* `?config set account_age P12DT3H` (stands for 12 days and 3 hours in [ISO-8601 Duration Format](https://en.wikipedia.org/wiki/ISO_8601#Durations))
 * `?config set account_age 3 days and 5 hours` (accepted readable time)
 
 _**Note(s):**_
@@ -83,7 +83,7 @@ _**Default:**_ No age threshold
 
 _**Example:**_
 
-* `?config set guild_age P12DT3H` (stands for 12 days and 3 hours in [ISO-8601 Duration Format](https://en.wikipedia.org/wiki/ISO\_8601#Durations))
+* `?config set guild_age P12DT3H` (stands for 12 days and 3 hours in [ISO-8601 Duration Format](https://en.wikipedia.org/wiki/ISO_8601#Durations))
 * `?config set guild_age 3 days and 5 hours` (accepted readable time)
 
 _**Notes:**_
@@ -310,7 +310,7 @@ _**Default:**_ Never
 
 _**Example:**_
 
-* `?config set thread_auto_close P12DT3H` (stands for 12 days and 3 hours in [ISO-8601 Duration Format](https://en.wikipedia.org/wiki/ISO\_8601#Durations))
+* `?config set thread_auto_close P12DT3H` (stands for 12 days and 3 hours in [ISO-8601 Duration Format](https://en.wikipedia.org/wiki/ISO_8601#Durations))
 * `?config set thread_auto_close 3 days and 5 hours` (accepted readable time)
 
 _**Notes:**_
@@ -327,7 +327,7 @@ _**Default:**_ Never
 
 _**Example:**_
 
-* `?config set thread_cooldown P12DT3H` (stands for 12 days and 3 hours in [ISO-8601 Duration Format](https://en.wikipedia.org/wiki/ISO\_8601#Durations))
+* `?config set thread_cooldown P12DT3H` (stands for 12 days and 3 hours in [ISO-8601 Duration Format](https://en.wikipedia.org/wiki/ISO_8601#Durations))
 * `?config set thread_cooldown 3 days and 5 hours` (accepted readable time)
 
 _**Notes:**_
@@ -1459,7 +1459,7 @@ _**Notes:**_
 
 ## `.env` Config Options
 
-**The following is a list of config options that can **_**ONLY**_** be added by editing the `.env` file. Please use whichever guide you followed to set up the bot to see how to add these variables.**
+**The following is a list of config options that can \_ONLY**\_\*\* be added by editing the `.env` file. Please use whichever guide you followed to set up the bot to see how to add these variables.\*\*
 
 {% hint style="danger" %}
 It is recommended you avoid and ignore changing any of these you do not fully understand
